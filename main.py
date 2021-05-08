@@ -1,22 +1,24 @@
 import random as r
+import character as chrt
 
 #TODO Character System
-#Character Class   
-#Specialization Class
-#Species Class
 
-#Location System
-class Location: #Location Class
-    def __init__(self, id, LinkedLocations, EntryText):
-        self.LinkedLocations=LinkedLocations
-        self.id=id
-        self.EntryText=EntryText
-        return
-    
-    def enter(self): 
-        print(self.EntryText)
-        return
+#init species
+SpeciesList = []
+SpeciesList.append(chrt.species("Human",10,10,10,10))
+
+#init specialties
+SpecialitiesList = []
+SpecialitiesList.append(chrt.speciality("Generic Person or Something"))
+
+char = chrt.character()
+char.CreateCharacter(SpeciesList, SpecialitiesList)
+
+print(char.str)
+print(char.dex)
+print(char.int)
+print(char.hlt)
+
+#TODO Location System
 
 #TODO Game Mechanics
-
-#Main Loop
