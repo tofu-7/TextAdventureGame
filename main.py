@@ -1,23 +1,23 @@
 import random as r
-import character as chrt
+import player as plyr
 
 #TODO Character System
 
 #init species
 SpeciesList = []
-SpeciesList.append(chrt.species("Human",10,10,10,10))
+SpeciesList.append(plyr.species("Human",0,0,0,0))
 
 #init specialties
 SpecialitiesList = []
-SpecialitiesList.append(chrt.speciality("Generic Person or Something"))
+SpecialitiesList.append(plyr.speciality("Generic Person or Something"))
 
-char = chrt.character()
-char.CreateCharacter(SpeciesList, SpecialitiesList)
+ply = plyr.character()
+ply.CreateCharacter(SpeciesList, SpecialitiesList)
 
-print(char.str)
-print(char.dex)
-print(char.int)
-print(char.hlt)
+print(ply.str)
+print(ply.dex)
+print(ply.int)
+print(ply.hlt)
 
 #TODO Location System
 

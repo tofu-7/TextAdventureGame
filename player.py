@@ -8,6 +8,7 @@ class character:
         self.int = r.randrange(1,50) + r.randrange(1,51) - 1
         self.hlt = r.randrange(1,50) + r.randrange(1,51) - 1
         self.species = species()
+        self.speciality = speciality()
         return
 
     def CreateCharacter(self, speciesList, specialityList):
